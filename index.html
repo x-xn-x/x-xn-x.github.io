@@ -11,7 +11,7 @@
 <body>
     <nav class="bg-transparent dark:bg-gray-900 fixed w-full z-20 top-0 start-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <img src="./resources/img/logo/xn_logo_cropped.png" class="h-16">
+            <img src="./resources/img/logo/xn_logo_cropped.png" class="h-11">
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -41,56 +41,68 @@
         </div>
     </nav>
 
-    <div class="waveParent" style="padding-bottom: 100vh">
+    <div class="container wave-parent" style="padding-bottom: 100vh">
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
-        <div class="wave_title" style="z-index: 0;">
-            <h1 class="text-6xl pb-4">Dream. Plan. Create.</h1>
-            <h2 class="text-base">We specialise in creating those dreams of yours into reality.</h2>
+        <div class="wave_title grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img class="sm:hidden" style="height: 28vh;" src="./resources/img/logo/xn_logo_cropped.png">
+            <div class="m-5 text-left" style="height: auto; margin: auto 0;">
+                <h1 class="text-6xl pb-4">Dream. Plan. Create.</h1>
+                <h2 class="text-base">We specialise in creating those dreams of yours into reality.</h2>
+            </div>
+            <img class="m-5 sm:block" style="width: 28vh; height: 28vh; margin: auto 0; margin-left: auto;" src="./resources/img/logo/xn_logo_cropped.png">
         </div>
+
     </div>
 
-    <div class="container" >
+    <!-- <div class="" style="width: 100vw; height: 2vh; background-color: none; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #191f24);"></div> -->
+
+    <div class="container" style="padding: 0; margin: 0; background-color: none;">
+        <div class="gradient-overlay" >
+        </div>
+
         <div class="content">
-            <div class="container">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4 block sm:hidden">
-                        <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
-                    </div>
-                    <div class="p-4">
-                        <h1 class="text-4xl" style="color: black">About Us</h1>
-                        <p class="text-lg">We are a team of developers and designers who are passionate about creating and developing websites and applications. We are dedicated to making your dreams a reality.</p>
-                    </div>
-                    <div class="p-4 hidden sm:block">
-                        <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4">
-                        <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
-                    </div>
-                    <div class="p-4">
-                        <h1 class="text-4xl">Services</h1>
-                        <p class="text-lg">We offer a range of services from website development to application development. We also offer a range of design services to help you create the perfect website or application.</p>
+            <div class="content-limiter">
+                <div class="container">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 block sm:hidden">
+                            <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+                        </div>
+                        <div class="p-4">
+                            <h1 class="text-4xl" style="color: black">About Us</h1>
+                            <p class="text-lg">We are a team of developers and designers who are passionate about creating and developing websites and applications. We are dedicated to making your dreams a reality.</p>
+                        </div>
+                        <div class="p-4 hidden sm:block">
+                            <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="container mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4 block sm:hidden">
-                        <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+        
+                <div class="container">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4">
+                            <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+                        </div>
+                        <div class="p-4">
+                            <h1 class="text-4xl">Services</h1>
+                            <p class="text-lg">We offer a range of services from website development to application development. We also offer a range of design services to help you create the perfect website or application.</p>
+                        </div>
                     </div>
-                    <div class="p-4">
-                        <h1 class="text-4xl" style="color: black">About Us</h1>
-                        <p class="text-lg">We are a team of developers and designers who are passionate about creating and developing websites and applications. We are dedicated to making your dreams a reality.</p>
-                    </div>
-                    <div class="p-4 hidden sm:block">
-                        <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+                </div>
+        
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 block sm:hidden">
+                            <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+                        </div>
+                        <div class="p-4">
+                            <h1 class="text-4xl" style="color: black">About Us</h1>
+                            <p class="text-lg">We are a team of developers and designers who are passionate about creating and developing websites and applications. We are dedicated to making your dreams a reality.</p>
+                        </div>
+                        <div class="p-4 hidden sm:block">
+                            <img src="./resources/img/logo/xn_logo_cropped.png" alt="logo" class="h-64">
+                        </div>
                     </div>
                 </div>
             </div>

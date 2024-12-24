@@ -1,10 +1,15 @@
-.waveParent {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
+body {
     background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
+    margin: 0;
+    padding: 0;
+}
+
+.wave-parent {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
     background-attachment: fixed;
     z-index: 1; /* Lower z-index */
     position: relative; /* Add positioning */
@@ -40,28 +45,45 @@
 
 .wave_title {
     color: #fff;
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 4rem;
     z-index: 0; /* Lower z-index */
-    text-align: center;
-    position: fixed;
+    position: fixed; /* Add positioning */
+    max-width: 900px;
+    width: 100%;
+    height: 92%; /* This adjusts the position of the title */
+    left: 50%;
+    margin: 0px;
+    transform: translateX(-50%);
+    /* align automatically to center */
 }
 
 .container {
     width: 100%; /* Ensure full width */
     max-width: 100%; /* Prevent horizontal scrolling */
     margin: 0 auto; /* Center content */
-    padding: 0 1rem; /* Optional: Add padding */
-    background-color: #191f24; /* Ensure consistent background */
+    padding: 0;
     z-index: 2; /* Ensure content is above waves */
     position: relative; /* Ensure it respects z-index */
 }
 
 .content {
-    max-width: 1200px;
+    background-color: #191f24;
+}
+
+.gradient-overlay {
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    pointer-events: none; 
+    z-index: 3; 
+    /* height: 0.5vh;
+    background-color: rgb(255, 255, 255);  */
+    height: 10vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(25, 31, 36, 1)  ); 
+}
+
+.content-limiter {
+    max-width: 1300px;
     margin: 0 auto;
 }
 @keyframes wave {
