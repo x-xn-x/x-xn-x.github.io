@@ -43,16 +43,12 @@ body {
     z-index: 0; /* Ensure this wave is also behind */
 }
 
-.wave_title {
+.wave-title {
     color: #fff;
-    font-size: 4rem;
     z-index: 0; /* Lower z-index */
     position: fixed; /* Add positioning */
     max-width: 900px;
-    width: 100%;
-    height: 92%; /* This adjusts the position of the title */
     left: 50%;
-    margin: 0px;
     transform: translateX(-50%);
     /* align automatically to center */
 }
@@ -81,6 +77,7 @@ body {
     height: 10vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(25, 31, 36, 1)  ); 
 }
+
 
 .content-limiter {
     max-width: 1300px;
