@@ -99,8 +99,9 @@ body {
 
 .section img {
     margin: auto;
+    height: 100%;
     width: auto;
-    height: 20px;
+    object-fit: cover;
     box-shadow: 0 0 12px #66dd9c;
 }
 
@@ -225,6 +226,16 @@ li a {
     }
 }
 
+.project-title {
+    font-size: 2.1vmax;
+    color: #66dd9c;
+}
+
+.project-description {
+    font-size: 1.1vmax;
+    font-weight: 300;
+}
+
 @media (max-width: 760px) {
     .content-limiter {
         max-width: 90%;
@@ -239,9 +250,15 @@ li a {
         font-size: 200%;
     }
 
-    .section h3 {
+    .project-title {
+        font-size: 160%;
+    }
+
+
+    .project-description {
         font-size: 100%;
     }
+
 
     .section p {
         font-size: 90%;
