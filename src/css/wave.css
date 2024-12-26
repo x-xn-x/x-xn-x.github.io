@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap');
+
 body {
     background: linear-gradient(315deg, rgba(200, 75, 135, 1) 15%, rgba(76, 140, 60, 1) 50%, rgba(152, 205, 60, 1) 85%);
     animation: gradient 15s ease infinite;
@@ -56,7 +58,6 @@ body {
 .container {
     width: 100%; /* Ensure full width */
     max-width: 100%; /* Prevent horizontal scrolling */
-    margin: 0 auto; /* Center content */
     padding: 0;
     z-index: 2; /* Ensure content is above waves */
     position: relative; /* Ensure it respects z-index */
@@ -86,7 +87,85 @@ body {
     padding-top: 20px;
 }
 
+.section {
+    margin: 50px auto 75px auto;
+}
+
+.section img {
+    margin: auto;
+    width: 19vh;
+    height: auto;
+}
+
+.projects {
+    height: auto;
+}
+
+.projects h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.projects p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.section h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projects {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+    z-index: 1; /* Set a stacking context */
+}
+
+.projects::before {
+    font-family: "IBM Plex Sans", serif; /* Use a custom font */
+    font-weight: 700;
+    content: "FEATURED PROJECTS"; /* The background text */
+    position: absolute; /* Position it relative to .projects */
+    top: 49%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    line-height: 1;
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    font-size: 16vw; /* Adjust size as needed */
+    color: rgba(0, 0, 0, 0.1); /* Light color for subtlety */
+    z-index: -1; /* Place behind the .projects content */
+    pointer-events: none; /* Ensure the text doesn't interfere with user interactions */
+}
+
+.project-images button {
+    margin: auto;
+    display: inline;
+    vertical-align: middle;
+    font-size: 2.5rem;
+}
+.project-images img {
+    display: inline;
+}
+
+
+@media (min-width: 761px) {
+    .projects::before {
+        font-size: 9vw; /* Adjust size as needed */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}
+
+@media (max-width: 760px) {
+    .content-limiter {
+        max-width: 100%;
+    }
+}
+
 p {
+    text-align: justify;
     color: white;
 }
 
