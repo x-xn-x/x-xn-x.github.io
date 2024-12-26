@@ -82,7 +82,7 @@ body {
 }
 
 .content-limiter {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -160,7 +160,7 @@ body {
 
 @media (max-width: 760px) {
     .content-limiter {
-        max-width: 100%;
+        max-width: 90%;
     }
 }
 
