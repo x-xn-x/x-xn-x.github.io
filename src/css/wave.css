@@ -95,7 +95,6 @@ body {
     flex-direction: column;
     justify-content: space-between; /* Ensures content is spaced out */
     margin: 50px auto 75px auto;
-    height: 100%; /* Allow for full height */
 }
 
 .section img {
