@@ -184,7 +184,7 @@ li a {
 
 .section p {
     /* font-size: 1.2dvb; */
-    font-size: 1.2vmax;
+    font-size: 1vmax;
     line-height: 1;
     color:#f3f3f3;
     margin-top: 10px;
@@ -208,7 +208,7 @@ li a {
 
 .section .section-link {
     position: relative;
-    font-size: 1.2vmax;
+    font-size: 1vmax;
     font-family: "Rubik", serif;
     font-weight: 300;
     color: #5abd87;
