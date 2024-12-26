@@ -100,7 +100,6 @@ body {
 .section img {
     margin: auto;
     width: auto;
-    object-fit: cover;
     box-shadow: 0 0 12px #66dd9c;
 }
 
