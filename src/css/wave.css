@@ -82,19 +82,26 @@ body {
 }
 
 .content-limiter {
-    max-width: 1400px;
+    width: 1400px;
+    max-width: 85%;
     margin: 0 auto;
     padding-top: 20px;
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out */
     margin: 50px auto 75px auto;
+    height: 100%; /* Allow for full height */
 }
 
 .section img {
     margin: auto;
-    width: 19vh;
-    height: auto;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    box-shadow: 0 0 12px #66dd9c;
 }
 
 .projects {
@@ -109,7 +116,7 @@ body {
 }
 
 .projects p {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -118,6 +125,16 @@ body {
 .section h1 {
     margin-bottom: 40px;
     text-align: center;
+}
+
+.section-text {
+    margin: auto 0;
+    padding: 0;
+}
+
+.projects img {
+    width: 19vh;
+    box-shadow: none;
 }
 
 .projects {
@@ -141,15 +158,56 @@ body {
 }
 
 .project-images button {
-    margin: auto;
     display: inline;
     vertical-align: middle;
     font-size: 2.5rem;
 }
+
 .project-images img {
     display: inline;
 }
 
+p {
+    font-family: "Rubik", serif; /* Use a custom font */
+    font-weight: 200;
+}
+
+.section p {
+    /* font-size: 1.2dvb; */
+    font-size: 1.1vmax;
+    line-height: 1.25;
+    color:#e2e2e2;
+    margin-top: 10px;
+}
+
+.section h2 {
+    font-family: "IBM Plex Sans", serif; /* Use a custom font */
+    font-weight: 600;
+    color:#66dd9c;
+    line-height: 0.8;
+    margin-bottom: 3px;
+}
+
+.section h3 {
+    font-family: "Rubik", serif; /* Use a custom font */
+    font-weight: 300;
+    color:#27aa62;
+    line-height: 0.9;
+    font-size: 1.25vmax;
+}
+
+.section button {
+    position: relative;
+    font-size: 1.2vmax;
+    font-family: "Rubik", serif;
+    font-weight: 300;
+    color: #5abd87;
+    margin-top: 17px
+}
+
+.section img {
+    border-radius: 6px;
+}
 
 @media (min-width: 761px) {
     .projects::before {
@@ -161,6 +219,24 @@ body {
 @media (max-width: 760px) {
     .content-limiter {
         max-width: 90%;
+    }
+
+    .section-text {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .section h3 {
+        font-size: 100%;
+    }
+
+    .section p {
+        font-size: 90%;
+    }
+
+    .section button {
+        font-size: 90%;
+        margin-top: 7px
     }
 }
 
