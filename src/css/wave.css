@@ -203,7 +203,7 @@ li a {
     font-weight: 300;
     color:#27aa62;
     line-height: 0.9;
-    font-size: 1.45vmax;
+    font-size: 1.5vmax;
 }
 
 .section .section-link {
@@ -252,6 +252,10 @@ li a {
 
     .project-title {
         font-size: 160%;
+    }
+
+    .section-text h3 {
+        font-size: 110%;
     }
 
 
