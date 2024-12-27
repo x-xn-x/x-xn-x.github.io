@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensures content is spaced out */
-    margin: 50px auto 75px auto;
+    margin: 50px auto 110px auto;
 }
 
 .section img {
@@ -160,7 +160,25 @@ body {
     color: rgba(0, 0, 0, 0.1); /* Light color for subtlety */
     z-index: -1; /* Place behind the .projects content */
     pointer-events: none; /* Ensure the text doesn't interfere with user interactions */
+    text-align: center;
 }
+
+#client-review::before {
+    font-family: "IBM Plex Sans", serif; /* Use a custom font */
+    font-weight: 700;
+    content: "CONTACT"; /* The background text */
+    position: absolute; /* Position it relative to .projects */
+    top: 49%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    line-height: 1;
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    font-size: 16vw; /* Adjust size as needed */
+    color: rgba(0, 0, 0, 0.1); /* Light color for subtlety */
+    z-index: -1; /* Place behind the .projects content */
+    pointer-events: none; /* Ensure the text doesn't interfere with user interactions */
+    text-align: center;
+}
+
 
 .project-images button {
     display: inline;
@@ -188,6 +206,7 @@ li a {
     line-height: 1;
     color:#f3f3f3;
     margin-top: 10px;
+    text-align: justify;
 }
 
 .section h2 {
@@ -199,11 +218,11 @@ li a {
     margin-bottom: 4px;
 }
 
-.section-text h3 {
+#section-subtitle, .section-text h3 {
     font-weight: 300;
     color:#27aa62;
     line-height: 0.9;
-    font-size: 1.5vmax;
+    font-size: 0.9vmax;
 }
 
 .section .section-link {
@@ -236,7 +255,41 @@ li a {
     font-weight: 300;
 }
 
+
+#client-profile, #client-reviews {
+    text-align: left;
+    display: inline-block;
+}
+
+#client-reviews {
+    width: 79%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+#client-profile {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+#client-profile img {
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: none;
+    box-shadow: #66dd9c 0 0 12px;
+}
+
+#satisfaction-title {
+    text-align: center;
+}
+
 @media (max-width: 760px) {
+
+
+
     .content-limiter {
         max-width: 90%;
     }
@@ -254,10 +307,38 @@ li a {
         font-size: 160%;
     }
 
-    .section-text h3 {
+
+
+    #section-subtitle, .section-text h3 {
         font-size: 110%;
     }
 
+    #client-profile {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+    }
+
+    #client-reviews {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #client-reviews p {
+        text-align: center;
+    }
+
+    #client-profile img {
+        margin-right: 0;
+    }
+
+    .section p {
+        text-align: left;
+    }
 
     .project-description {
         font-size: 100%;
@@ -275,7 +356,6 @@ li a {
 }
 
 p {
-    text-align: justify;
     color: white;
 }
 
@@ -289,6 +369,8 @@ h2 {
     color: white;
     font-family: "IBM Plex Sans", serif;
 }
+
+  
 
 @keyframes wave {
     2% {
@@ -310,6 +392,7 @@ h2 {
     100% {
         transform: translateX(1);
     }
+
 }
 
 @keyframes gradient {
@@ -323,4 +406,67 @@ h2 {
         background-position: 0% 0%;
     }
 }
+
+
+
+
+
+.scroller__inner {
+    padding-block: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scroller__inner li {
+    background-color: #165532;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    border-radius: 0.3rem;
+    color: #e1ffef;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 700;
+    box-shadow: 0 0 7px #66dd9c;
+}
+  
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+  
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+}
+  
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+  
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+  
+.scroller[data-speed="fast"] {
+    --_animation-duration: 60s;
+}
+  
+.scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+  
+@keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
 

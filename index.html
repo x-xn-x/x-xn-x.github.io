@@ -87,19 +87,19 @@
         <div class="content grid-background">
             <div class="content-limiter">
                 <section class="section container" style="margin-top: 1.5rem; max-width: 80%; margin-bottom: 0; padding-bottom: 3rem;">
-                    <div class="projects justify-center">
+                    <div class="projects" id="featured-projects">
                         <div class="project-images" style="height: 100%; width: fit-content; margin: auto;">
-                            <button style="margin-right: 20px;"> < </button>
-                            <img src="./resources/img/projects/osu-tournament-manager/logo.png" alt="logos" style="margin: 0;">
-                            <button style="margin-left: 20px;"> > </button>
+                            <button id="prev-project" style="margin-right: 20px;">&#8249;</button>
+                            <img id="current-project" src="./resources/img/projects/osu-tournament-manager/logo.png" alt="logos" style="margin: 0;">
+                            <button id="next-project" style="margin-left: 20px;">&#8250;</button>
                         </div>
                         <div class="project-title" style="text-align: center;">osu! Tournament Manager</div>
-                        <div class="project-description" style="margin-top: 2px; text-align: center; color:#f3f3f3">osu! Tournament Manager is a web application that allows users to create and manage osu! tournaments.</div>
-                        <div class="project-description" style="margin-top: 16px; text-align: center; color: #5abd87"><a href="/projects/osu-tournament-manager">Read More</a></div> 
-                        <!-- <img src="./resources/img/projects/drm/logo.png" alt="logos">
-                        <img src="./resources/img/projects/abyssal/logo.png" alt="logos">
-                        <img src="./resources/img/projects/abyssal/logo.png" alt="logos">
-                        <img src="./resources/img/projects/abyssal/logo.png" alt="logos"> -->
+                        <div class="project-description" style="margin-top: 2px; text-align: center; color:#f3f3f3">
+                            osu! Tournament Manager is a web application that allows users to create and manage osu! tournaments.
+                        </div>
+                        <div class="project-description" style="margin-top: 16px; text-align: center; color: #5abd87">
+                            <a id="project-link" href="/projects/osu-tournament-manager">Read More</a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -130,7 +130,7 @@
                             <img src="./resources/img/pages/index/top-quality.png" alt="logos" class="h-64">
                         </div>
                         <div class="section-text p-4">
-                            <h2>TOP QUALITY</h2>
+                            <h2>QUALITY</h2>
                             <h3>Why I should be your choice</h3>
                             <p class="text-lg">With over three years of freelancing experience, I deliver expert solutions that stand out. From creating seamless user interfaces to solving complex problems, I ensure every project exceeds expectations. My goal is to provide an exceptional experience - making your reality even better than your vision.</p>
                             <p class="section-link"><a>View Services ></a></p>
@@ -138,25 +138,167 @@
                     </div>
                 </section>
         
-                <section class="section container" style="margin-bottom: 0;">
-                    <h2 class="text-4xl text-center">SKILLS</h2>
+                <section class="section container">
+                    <h2 class="text-4xl text-center">SKILLSETS</h2>
+                    <h3 id="section-subtitle" class="text-lg text-center" style="line-height: 1; color: #ffffff; font-weight: 200;">Check out some of the skills I’m proud to offer. I’ve got a lot up my sleeve, so if any of these catch your eye, feel free to reach out and let’s chat about how I can help!</h3>
+                    <!-- Make scroll here -->
+                    <div class="scroller" data-speed="fast">
+                        <ul class="tag-list scroller__inner">
+                            <li>gLua</li>
+                            <li>Tailwind</li>
+                            <li>Node.JS</li>
+                            <li>Lua</li>
+                            <li>Javascript</li>
+                            <li>React.JS</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Express.JS</li>
+                            <li>SQL</li>
+                            <li>PHP</li>
+                            <li>Bootstrap</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
 
+                    <div class="scroller" data-speed="fast" data-direction="right">
+                        <ul class="tag-list scroller__inner">
+                            <li>UI/UX</li>
+                            <li>APIs</li>
+                            <li>Scripts</li>
+                            <li>Servers</li>
+                            <li>Addons</li>
+                            <li>Web Applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="scroller" data-speed="fast">
+                        <ul class="tag-list scroller__inner">
+                            <li>Machine Learning</li>
+                            <li>Automation</li>
+                            <li>Server Maintenance</li>
+                            <li>Inovation</li>
+                            <li>Problem Solving</li>
+                            <li>Optimization</li>
+                            <li>Security</li>
+                            <li>Development Support</li>
+                            <li>Consultation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section container"  style="margin-bottom: 0; padding-bottom: 80px; max-width: 1000px;">
+                    <h2 id="satisfaction-title" class="text-4xl">SATISFACTION</h2>
+                    <h3 id="section-subtitle" class="text-lg text-center" style="line-height: 1; color: #ffffff; font-weight: 200;">What does our clients say? 👀</h3>
+                    <div>
+                        <div id="client-profile" style="height: 15vh; width: 15vh; margin-top: 15px;">
+                            <img style="object-fit: cover;" src="./resources/img/clients/custos.png" />
+                        </div>
+                        <div id="client-reviews" >
+                            <h2>Custos</h2>
+                            <div style="color: #ecb92d;">★★★★☆</div>
+                            <p style="margin-top: 1px;">Great service, very professional and quick. Would recommend to anyone looking for a developer. He has provided some of the best content that I could ask for. This guy is so skibidi that I fanum tax on all those persons. Would always glorp pepper ew 4eva <3 <3.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="content grid-background" style="border-bottom: #66dd9c 3px solid;">
+            <div class="content-limiter">
+                <section class="section container" style="margin-top: 1.5rem; max-width: 80%; margin-bottom: 0; padding-bottom: 3rem;">
+                    <h2 style="text-align: center;">HAVE AN IDEA?</h2>
+                    <div class="project-description" style="margin-top: 2px; text-align: center; color:#f3f3f3">
+                        Are you finished looking through? If you're ready to start your project, feel free to contact me. I will be turn your dreams into reality.
+                    </div>
                 </section>
             </div>
         </div>
     </div>
-   
-    <!-- <div class="hero">
-        <div class="hero__title">Think. Propose. Create.</div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-    </div> -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script>
+        const scrollers = document.querySelectorAll(".scroller");
+
+        // If a user hasn't opted in for recuded motion, then we add the animation
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+        }
+
+        function addAnimation() {
+        scrollers.forEach((scroller) => {
+            // add data-animated="true" to every `.scroller` on the page
+            scroller.setAttribute("data-animated", true);
+
+            // Make an array from the elements within `.scroller-inner`
+            const scrollerInner = scroller.querySelector(".scroller__inner");
+            const scrollerContent = Array.from(scrollerInner.children);
+
+            // For each item in the array, clone it
+            // add aria-hidden to it
+            // add it into the `.scroller-inner`
+            // get width of screen
+            const screenWidth = window.innerWidth;
+            let itemsPerScreen = Math.floor(screenWidth / 150);
+            for (let i = 0; i < 9; i++) {
+                scrollerContent.forEach((item) => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scrollerInner.appendChild(duplicatedItem);
+                });
+            }
+        });
+        }
+    </script>
+    <script>
+        const projects = [
+          {
+            title: "osu! Tournament Manager",
+            description: "osu! Tournament Manager is a web application that allows users to create and manage osu! tournaments.",
+            image: "./resources/img/projects/osu-tournament-manager/logo.png",
+            link: "/projects/osu-tournament-manager",
+          },
+          {
+            title: "Dynamic Resource Manager",
+            description: "A powerful tool for managing server-side resources dynamically.",
+            image: "./resources/img/projects/drm/logo.png",
+            link: "/projects/drm",
+          },
+          {
+            title: "Abyssal Project",
+            description: "A deep dive into creating immersive experiences.",
+            image: "./resources/img/projects/abyssal/logo.png",
+            link: "/projects/abyssal",
+          },
+        ];
+      
+        let currentIndex = 0;
+      
+        const projectImage = document.getElementById('current-project');
+        const projectTitle = document.querySelector('.project-title');
+        const projectDescription = document.querySelector('.project-description');
+        const projectLink = document.getElementById('project-link');
+        
+        const updateProject = () => {
+          const { title, description, image, link } = projects[currentIndex];
+          projectImage.src = image;
+          projectTitle.textContent = title;
+          projectDescription.textContent = description;
+          projectLink.href = link;
+        };
+      
+        document.getElementById('prev-project').addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+          updateProject();
+        });
+      
+        document.getElementById('next-project').addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % projects.length;
+          updateProject();
+        });
+      
+        updateProject();
+      </script>
 </body>
 </html>
