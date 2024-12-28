@@ -84,17 +84,18 @@ body {
 }
 
 .content-limiter {
-    width: 1400px;
+    width: 1300px;
     max-width: 85%;
     margin: 0 auto;
     padding-top: 20px;
 }
 
 .section {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensures content is spaced out */
-    margin: 50px auto 80px auto;
+    margin: 50px auto 130px auto;
 }
 
 .section img {
@@ -202,7 +203,7 @@ li a {
 
 .section p {
     /* font-size: 1.2dvb; */
-    font-size: 1vmax;
+    font-size: 1.5vmin;
     line-height: 1;
     color:#f3f3f3;
     margin-top: 10px;
@@ -514,4 +515,32 @@ h2 {
     }
 }
 
-
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
